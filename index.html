@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gradient Background</title>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+  </head>
+  <body id="gradient">
+    <main class="app">
+      <header class="app-header">
+        <h1>Gradient Studio</h1>
+        <p class="subtitle">A small tool for generating beautiful CSS gradients</p>
+      </header>
+
+      <section class="controls">
+        <div class="colors">
+          <label class="picker">
+            <span>Left</span>
+            <input class="color1" type="color" name="color1" value="#00ff00" />
+            <input class="color1-hex" type="text" readonly />
+          </label>
+
+          <div class="actions">
+            <button class="swap">Swap</button>
+            <button class="random">Random</button>
+          </div>
+
+          <label class="picker">
+            <span>Right</span>
+            <input class="color2" type="color" name="color2" value="#ff0000" />
+            <input class="color2-hex" type="text" readonly />
+          </label>
+        </div>
+
+        <div class="extras">
+          <label>
+            Angle
+            <input class="angle" type="range" min="0" max="360" value="90" />
+            <output class="angle-value">90°</output>
+          </label>
+
+          <div class="copy-area">
+            <button class="copy">Copy CSS</button>
+            <small class="copied-msg" aria-hidden="true">Copied!</small>
+          </div>
+        </div>
+
+        <div class="css-preview">
+          <h2>CSS</h2>
+          <pre class="css-output"></pre>
+        </div>
+      </section>
+
+      <footer class="app-footer">
+        <small>Tip: click Random for inspiration. Swap reverses the gradient.</small>
+      </footer>
+    </main>
+
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>
